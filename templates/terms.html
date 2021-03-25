@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+{% load static %}
+
+    
+	<meta charset="UTF-8">
+	<title>Scarica gratis GARAGE Template html/css - Web Domus Italia - Web Agency </title>
+	<meta name="description" content="Scarica gratis il nostro Template HTML/CSS GARAGE. Se avete bisogno di un design per il vostro sito web GARAGE può fare per voi. Web Domus Italia">
+	<meta name="author" content="Web Domus Italia">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel='stylesheet' href="{% static 'bootstrap/css/bootstrap.css'%}">
+	 <link rel='stylesheet' href="{% static 'font-awesome-4.5.0/css/font-awesome.css'%}">
+	  <link rel='stylesheet' href="{% static 'css/slider.css'%}">
+	  <link rel='stylesheet' href="{% static 'css/mystyle.css'%}">
+	  <!------>
+	   
+</head>
+<body>
+<!-- Header -->
+<div class="allcontain">
+	<div class="header">
+			
+			
+			<ul class="logreg">
+				<li><a href="{% url 'login' %}">Login </a> </li>
+				<li><a href="{% url 'signup' %}"><span class="register">Register</span></a></li>
+			</ul>
+	</div>
+	<!-- Navbar Up -->
+	<nav class="topnavbar navbar-default topnav">
+		<div class="container">
+			<div class="navbar-header">
+				
+				<a href=" {% url 'home'%}"><img src="{% static 'images/Hema.png' %}" alt="logo"></a>
+			</div>	 
+		</div>
+		<div class="collapse navbar-collapse" id="upmenu"  style='background-color: black'>
+			<ul class="nav navbar-nav" id="navbarontop">
+				<li class="active"><a href="{% url 'login' %}">SEEK BLOOD</a></li>
+			    <li class="active"><a href="{% url 'login' %}">DONATE</a></li>
+			    <li class="active"><a href="{% url 'eligibility' %}">ELIGIBILITY CRITERIA</a></li>
+				<li class="active"><a href=" {% url 'contact'%}">CONTACT US</a></li>
+				<li class="active"><a href=" {% url 'about_us'%}"> ABOUT US</a></li>
+				</li>
+				
+			</ul>
+		</div>
+	</nav>
+    <div class="mydiv">
+    <h1 class="style">TERMS AND CONDITIONS</h1>
+    <h2>PRIVACY POLICY</h2>
+    <link rel="stylesheet" href="t&c.css">
+    <p class="paragraph">Our team is committed to protecting the rights of all visitors to our website. We recognize our obligation to keep personal information secure and have created this privacy statement to share our information gathering and dissemination practices for this website. We also assure you that none of your registered information will be shared with any third parties outside the company . However, the information that you have agreed to broadcast during the process of registration will be available for the public view.</p>
+    <h2>COLLECTION AND USE OF ONLINE INFORMATION</h2>
+    <p class="paragraph"> From time to time, we may use cookies on your web browser to store some of the user preference, this cookie will communicate only with this website and if you wish not have them saved, you may have them deleted from your computer using your browser’s settings. When you visit certain areas of this site including the registration form, you may be asked to provide personal information (such as name, address, e-mail address, and phone number) that we need to process your request. In the event that you decline to provide such information, we will be unable to process your request. Still, we invite you to continue to visit the site and take advantage of the wealth of information it offers. Every site user who provides us with personal information has the right to inspect, amend, or correct his/her own personal information. You may do so either online by logging in, if you are a registered user, or through simply contacting us using the details posted on the ‘contact us’ page on our website. </p>
+   
+    <h2>COMPLAINTS PROCEDURE</h2>
+    <p class="paragraph">Anyone who experiences a problem with the service provided by us should raise the matter directly using our online contact us form, giving sufficient information to locate the material (such as an url) and clearly outlining the grounds for complaint. Our team will approach the individual responsible for the material in question with a view to resolving the matter to the satisfaction of the complainant. The formal complaints procedure should only be used where the complainant feels that the nature of the complaint is too serious to be dealt with informally, or where a satisfactory conclusion has not been reached after following the informal procedure. A formal complaint should be made in writing to our team, who will acknowledge receipt and ensure that the matter is looked into at the earliest possible. An initial response to any complaint can be expected within seven days of its receipt; a full and considered response to the complaint should be completed within 30 days and any subsequent remedy implemented with the minimum of delay.</p>
+
+
+<br><br>
+<div class="footer">
+				<div class="copyright">
+				  &copy; Copy right 2021 | <a href="https://savannahinnovations.com/">Savannah Health System Innovation </a>
+				</div>
+				<div class="atisda">
+					 Designed by <a href="https://oluwatosin-dev.netlify.app/">Oluwatosin </a> 
+				</div>
+			</div>
+
+  </body>
+</html>

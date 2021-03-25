@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+{% load static %}
+
+    
+	<meta charset="UTF-8">
+	<title>Hema Source </title>
+	<meta name="description" content="Scarica gratis il nostro Template HTML/CSS GARAGE. Se avete bisogno di un design per il vostro sito web GARAGE può fare per voi. Web Domus Italia">
+	<meta name="author" content="Web Domus Italia">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel='stylesheet' href="{% static 'bootstrap/css/bootstrap.css'%}">
+	 <link rel='stylesheet' href="{% static 'font-awesome-4.5.0/css/font-awesome.css'%}">
+	  <link rel='stylesheet' href="{% static 'css/slider.css'%}">
+	  <link rel='stylesheet' href="{% static 'css/mystyle.css'%}">
+	  <!------>
+	   
+</head>
+<body>
+<!-- Header -->
+<div class="allcontain">
+	<div class="header">
+			
+			
+			<ul class="logreg">
+				<li><a href="{% url 'login' %}">Login </a> </li>
+				<li><a href="{% url 'signup' %}"><span class="register">Register</span></a></li>
+			</ul>
+	</div>
+	<!-- Navbar Up -->
+	<nav class="topnavbar navbar-default topnav">
+		<div class="container">
+			<div class="navbar-header">
+				
+				<a href=" {% url 'home'%}"><img src="{% static 'images/Hema.png' %}" alt="logo"></a>
+			</div>	 
+		</div>
+		<div class="collapse navbar-collapse" id="upmenu"  style='background-color: black;' >
+			<ul class="nav navbar-nav tinto" id="navbarontop">
+			   <li class="active"><a href="{% url 'home' %}">HOME</a></li>
+				<li class="active"><a href="{% url 'login' %}">SEEK BLOOD</a></li>
+			    <li class="active"><a href="{% url 'login' %}">DONATE</a></li>
+			    <li class="active"><a href="{% url 'eligibility' %}">ELIGIBILITY CRITERIA</a></li>
+				<li class="active"><a href=" {% url 'contact'%}">CONTACT US</a></li>
+				<li class="active"><a href=" {% url 'about_us'%}"> ABOUT US</a></li>
+				</li>
+				
+			</ul>
+		</div>
+	</nav>
+<form  method="POST" >
+  {% csrf_token %}
+  <div class="container">
+    {{ form.as_p}}
+ <button type="submit" class="registerbtn">Update</button>
+
+</div>
+
+</form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
